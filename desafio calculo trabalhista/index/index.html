@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    
+    <script src="script.js"></script>
+    <title>Calculo trabalhista</title>
+</head>
+
+<body>
+    <h1>Cálculo Trabalhista</h1>
+
+    <label>Valor da hora (R$):</label>
+    <input type="number" id="valorHora" step="0.01">
+
+    <label>Horas trabalhadas:</label>
+    <input type="number" id="horas" step="0.01">
+
+    <label>Recebe Vale-transporte? (S/N)</label>
+    <select id="valeTransporte">
+        <option value="S">Sim</option>
+        <option value="N">Não</option>
+    </select>
+
+    <label>Outras deduções (R$):</label>
+    <input type="number" id="outrasDeducoes" step="0.01">
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="saida" class="resultado hidden"></div>
+
+    <script src="calculo.js"></script>
+
+</body>
+
+</html>
